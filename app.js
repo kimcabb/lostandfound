@@ -4,7 +4,8 @@
 angular
 .module("whereismystuff",[
   "ui.router",
-  "welcome"
+  "welcome",
+  "createProfile"
 ])
 
 .config([
@@ -16,10 +17,18 @@ function RouterFunction ($stateProvider) {
   $stateProvider
   .state("homeIndex", {
     url: "/",
-    templateUrl: "js/stuff/index.html",
+    templateUrl: "js/stuff/home.html",
     controller: "stuffIndexController",
     controllerAs: "stuffIndexViewModel"
-  });
+  })
+
+    .state("createProfileIndex", {
+      url: "/createprofile",
+      templateUrl: "js/stuff/createprofile.html",
+      controller: "createProfileController",
+      controllerAs: "createProfileViewModel"
+    });
+
 }
 
 

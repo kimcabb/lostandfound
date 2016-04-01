@@ -6,7 +6,8 @@ angular
   "ui.router",
   "welcome",
   "createProfile",
-  "userProfile"
+  "userProfile",
+  "lostItem"
 ])
 
 .config([
@@ -34,9 +35,14 @@ function RouterFunction ($stateProvider) {
       templateUrl: "js/stuff/userprofile.html",
       controller: "userProfileController",
       controllerAs: "userProfileViewModel"
-    });
+    })
+    .state("lostItemIndex", {
+      url: "/lostitem",
+      templateUrl: "js/stuff/lostitem.html",
+      controller: "lostItemController",
+      controllerAs: "lostItemViewModel"
+    })
 
+  ;
 }
-
-
 })();

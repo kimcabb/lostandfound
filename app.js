@@ -5,7 +5,8 @@ angular
 .module("whereismystuff",[
   "ui.router",
   "welcome",
-  "createProfile"
+  "createProfile",
+  "userProfile"
 ])
 
 .config([
@@ -27,6 +28,12 @@ function RouterFunction ($stateProvider) {
       templateUrl: "js/stuff/createprofile.html",
       controller: "createProfileController",
       controllerAs: "createProfileViewModel"
+    })
+    .state("userProfileIndex", {
+      url: "/userprofile",
+      templateUrl: "js/stuff/userprofile.html",
+      controller: "userProfileController",
+      controllerAs: "userProfileViewModel"
     });
 
 }

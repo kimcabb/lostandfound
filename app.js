@@ -7,7 +7,8 @@ angular
   "welcome",
   "createProfile",
   "userProfile",
-  "lostItem"
+  "lostItem",
+  "itemReceived"
 ])
 
 .config([
@@ -41,6 +42,12 @@ function RouterFunction ($stateProvider) {
       templateUrl: "js/stuff/lostitem.html",
       controller: "lostItemController",
       controllerAs: "lostItemViewModel"
+    })
+    .state("itemReceivedIndex", {
+      url: "/itemreceived",
+      templateUrl: "js/stuff/itemreceived.html",
+      controller: "itemReceivedController",
+      controllerAs: "itemReceivedViewModel"
     })
 
   ;

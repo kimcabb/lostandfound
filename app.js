@@ -1,29 +1,30 @@
 "use strict";
 
 (function(){
-angular
-.module("whereismystuff",[
-  "ui.router",
-  "welcome",
-  "createProfile",
-  "userProfile",
-  "lostItem",
-  "itemReceived"
-])
+  angular
+  .module("whereismystuff",[
+    "ui.router",
+    "welcome",
+    "createProfile",
+    "userProfile",
+    "lostItem",
+    "itemReceived",
+    "reportFoundItem"
+  ])
 
-.config([
-  "$stateProvider",
-  RouterFunction
-]);
+  .config([
+    "$stateProvider",
+    RouterFunction
+  ]);
 
-function RouterFunction ($stateProvider) {
-  $stateProvider
-  .state("homeIndex", {
-    url: "/",
-    templateUrl: "js/stuff/home.html",
-    controller: "stuffIndexController",
-    controllerAs: "stuffIndexViewModel"
-  })
+  function RouterFunction ($stateProvider) {
+    $stateProvider
+    .state("homeIndex", {
+      url: "/",
+      templateUrl: "js/stuff/home.html",
+      controller: "stuffIndexController",
+      controllerAs: "stuffIndexViewModel"
+    })
 
     .state("createProfileIndex", {
       url: "/createprofile",
@@ -49,7 +50,12 @@ function RouterFunction ($stateProvider) {
       controller: "itemReceivedController",
       controllerAs: "itemReceivedViewModel"
     })
-
-  ;
-}
-})();
+    .state("reportFoundItem", {
+      url: "/reportfounditem",
+      templateUrl: "js/stuff/reportfounditem.html",
+      controller: "reportFoundItemController",
+      controllerAs: "reportFoundItemViewModel"
+    })  
+    ;
+  }
+  })();

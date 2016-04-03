@@ -9,7 +9,8 @@
     "userProfile",
     "lostItem",
     "itemReceived",
-    "reportFoundItem"
+    "reportFoundItem",
+    "thanksForReporting"
   ])
 
   .config([
@@ -55,7 +56,13 @@
       templateUrl: "js/stuff/reportfounditem.html",
       controller: "reportFoundItemController",
       controllerAs: "reportFoundItemViewModel"
-    })  
+    })
+    .state("thanksForReporting", {
+      url: "/thanksforreporting",
+      templateUrl: "js/stuff/thanksforreporting.html",
+      controller: "thanksForReportingController",
+      controllerAs: "thanksForReportingViewModel"
+    })
     ;
   }
   })();

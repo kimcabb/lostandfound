@@ -28,37 +28,37 @@
     })
 
     .state("createProfileIndex", {
-      url: "/createprofile",
+      url: "/create-profile",
       templateUrl: "js/stuff/createprofile.html",
       controller: "createProfileController",
       controllerAs: "createProfileViewModel"
     })
     .state("userProfileIndex", {
-      url: "/userprofile",
+      url: "/user-profile",
       templateUrl: "js/stuff/userprofile.html",
       controller: "userProfileController",
       controllerAs: "userProfileViewModel"
     })
     .state("lostItemIndex", {
-      url: "/lostitem",
+      url: "/lost-item",
       templateUrl: "js/stuff/lostitem.html",
       controller: "lostItemController",
       controllerAs: "lostItemViewModel"
     })
     .state("itemReceivedIndex", {
-      url: "/itemreceived",
+      url: "/item-received",
       templateUrl: "js/stuff/itemreceived.html",
       controller: "itemReceivedController",
       controllerAs: "itemReceivedViewModel"
     })
     .state("reportFoundItem", {
-      url: "/reportfounditem",
+      url: "/report-found-item",
       templateUrl: "js/stuff/reportfounditem.html",
       controller: "reportFoundItemController",
       controllerAs: "reportFoundItemViewModel"
     })
     .state("thanksForReporting", {
-      url: "/thanksforreporting",
+      url: "/thanks-for-reporting",
       templateUrl: "js/stuff/thanksforreporting.html",
       controller: "thanksForReportingController",
       controllerAs: "thanksForReportingViewModel"

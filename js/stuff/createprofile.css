@@ -7,6 +7,7 @@ body {
   margin-top: 5%;
   width: 200px;
   height: auto;
+  margin-left: 8%;
 }
 
 .image {
@@ -44,7 +45,27 @@ body {
 .create-profile  {
   margin-left: 25%;
   display: inline-block;
-  margin-top: 10%;
+  margin-top: 6%;
   color: white;
-  font-size: 22px;
+  font-size: 27px;
+  width: 50%
+}
+
+ .text {
+  width: 140px;
+}
+
+.create-profile table {
+  width: 60%;
+}
+
+.one-forth-input {
+  width: 95%;
+  padding: 9px;
+}
+
+input::-webkit-input-placeholder {
+  color: #8BC34A;
+  font-weight: 300;
+  font-size: 12px;
 }

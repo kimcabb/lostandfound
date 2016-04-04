@@ -69,3 +69,12 @@ input::-webkit-input-placeholder {
   font-weight: 300;
   font-size: 12px;
 }
+
+#state2-top {
+  height: 70%;
+}
+
+#state2-bottom {
+  height: 30%;
+  background-color: #2196F3;
+}

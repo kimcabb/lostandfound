@@ -9,6 +9,8 @@
 User.destroy_all
 Item.destroy_all
 
-testUser1 = User.create!(name: "Sheila Jones", username: "test1", email: "test@test.com", photo_url: "http://www.fillmurray.com/200/200")
+testUser1 = User.create!(name: "Sheila Jones", username: "test1", email: "test@test.com", city: "Seattle", state: "Washington", country: "US", photo_url: "http://www.fillmurray.com/200/200")
+testUser2 = User.create!(name: "Thomas Willard", username: "test2", email: "testagain@test.com", city: "Annapolis", state: "Maryland", country: "US", photo_url: "http://www.fillmurray.com/200/300")
 
-testItem1 = testUser1.items.create!(name: "bicycle", barcode: "3659878", photo_url: "www.google.com", status: "false")
+testItem1 = Item.create!(name: "bicycle", barcode: "3659878", photo_url: "www.google.com", status: "false")
+testItem2 = Item.create!(name: "cell phone", barcode: "2345688", photo_url: "www.google.com", status: "true")

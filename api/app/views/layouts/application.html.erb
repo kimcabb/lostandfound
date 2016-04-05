@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lost and Found</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
+
+  <script src="application.js"></script>
+  <script src="javascripts/stuff/home.controller.js"></script>
+  <script src="javascripts/stuff/createprofile.controller.js"></script>
+  <script src="javascripts/stuff/userprofile.controller.js"></script>
+  <script src="javascripts/stuff/lostitem.controller.js"></script>
+  <script src="javascripts/stuff/itemreceived.controller.js"></script>
+  <script src="javascripts/stuff/reportfounditem.controller.js"></script>
+  <script src="javascripts/stuff/thanksforreporting.controller.js"></script>
+  <%= stylesheet_link_tag 'application', property: "stylesheet", media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <title>Dude, Where's My Stuff?</title>
 </head>
 <body>
-  <h1> Dude, Where's My Stuff?</h1>
+  <div data-ng-app="whereismystuff">
+    <main data-ui-view></main>
+  </div>
 
 <%= yield %>
 
